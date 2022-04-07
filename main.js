@@ -3,7 +3,7 @@ var canvas=new fabric.Canvas('myCanvas');
 player_x=10;
 player_y=10;
 
-block_widht=30;
+block_width=30;
 block_height=30;
 
 var new_player="";
@@ -53,8 +53,72 @@ if (e.shiftKey == true && keypressed == '77') {
     document.getElementById("current_width").innerHTML=block_width;
     document.getElementById("current_height").innerHTML=block_height;
     }
-}
 
+    if (keypressed == '37') {
+        left()
+        console.log('left')
+    }
+    
+    if (keypressed == '38') {
+        up()
+        console.log('up')
+    }
+    
+    if (keypressed == '39') {
+        right()
+        console.log('right')
+    }
+    
+    if (keypressed == '40') {
+        down()
+        console.log('down')
+    }
+
+    if (keypressed == '67') {
+        new_image('cloud.jpg')
+        console.log('c')
+    }
+    
+    if (keypressed == '68') {
+        new_image('dark_green.png')
+        console.log('d')
+    }
+
+    if (keypressed == '71') {
+        new_image('ground.png')
+        console.log('g')
+    }
+    
+    if (keypressed == '76') {
+        new_image('light_green.png')
+        console.log('l')
+    }
+
+    if (keypressed == '82') {
+        new_image('roof.jpg')
+        console.log('r')
+    }
+    
+    if (keypressed == '84') {
+        new_image('trunk.jpg')
+        console.log('t')
+    }
+    
+    if (keypressed == '85') {
+        new_image('unique.png')
+        console.log('u')
+    }
+    
+    if (keypressed == '87') {
+        new_image('wall.jpg')
+        console.log('w')
+    }
+
+    if (keypressed == '89') {
+        new_image('yellow_wall.png')
+        console.log('y')
+    }
+}
 
 
 
